@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alertList">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+        android:elevation="4dp"
+        />
+    <Button
+        android:id="@+id/btnAlertOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/my_toolbar"
+        android:text="One Button Alert"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="34dp"
+        android:background="@color/IndianRed"/>
+    <Button
+        android:id="@+id/btnAlertTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Fuchsia"
+        android:layout_marginTop="3dp"
+      android:layout_below="@id/btnAlertOne"
+        android:text="Two Button Alert"
+        tools:layout_editor_absoluteX="64dp"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteY="34dp" />
+    <Button
+    android:id="@+id/btnAlertThree"
+    android:layout_width="match_parent"
+        android:background="@color/Teal"
+        android:textSize="15dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_below="@id/btnAlertTwo"
+    android:text="Three Button Alert"
+    tools:layout_editor_absoluteX="64dp"
+    tools:layout_editor_absoluteY="34dp" />
+    <Button
+        android:id="@+id/btnAlertList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:layout_below="@id/btnAlertThree"
+        android:text="Alert with ListView"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="34dp" />
+</RelativeLayout>
